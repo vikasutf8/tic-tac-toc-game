@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wraper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(dark-background.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+
+.player-info{
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgba(152, 133, 133, 0.717);
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: auto 15px; */
+    
+}
+
+.tic-tac-toc{
+    width: 90%;
+    /* height: 50%; */
+
+    max-width: 15rem;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgba(152, 133, 133, 0.717);
+    padding: 2rem;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.box1 ,.box2, .box4 ,.box5{
+    border-bottom:2px solid whitesmoke ;
+    border-right:2px solid whitesmoke ;
+
+}
+
+.box3 ,.box6 {
+    border-bottom:2px solid whitesmoke ;
+
+}
+
+.box7 ,.box8{
+    border-right:2px solid whitesmoke ;
+
+}
+
+.btn{
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgba(152, 133, 133, 0.717);
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.winner{
+    background-color: green;
+}
